@@ -45,6 +45,7 @@
 
 .buttons .btn.active {
   background-image: linear-gradient(to right, #3f0f5e, #521563); /* Dégradé de violet */
+  z-index: 0;
 }
 
 /* Conteneur des boutons */

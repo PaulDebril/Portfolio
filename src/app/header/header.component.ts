@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,5 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export class HeaderComponent {
   faLinkedin = faLinkedin;
   faGithub = faGithub;
+  faFileAlt = faFileAlt;
 }
