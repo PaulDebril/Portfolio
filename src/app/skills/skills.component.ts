@@ -19,7 +19,7 @@ export class SkillsComponent {
    { name: 'JEE', level: 'Confirmé', category: 'backend', progress: 75 },
    { name: 'Joomla', level: 'Intermédiaire', category: 'other', progress: 50 },
    { name: 'Figma', level: 'Confirmé', category: 'other', progress: 75 },
-   { name: 'Github', level: 'Confirmé', category: 'other', progress: 72 },
+   { name: 'Github', level: 'Confirmé', category: 'other', progress: 75 },
    { name: 'Html/Css', level: 'Maîtrise', category: 'frontend', progress: 100 },
    { name: 'Javascript', level: 'Confirmé', category: 'frontend', progress: 75 },
    { name: 'NodeJS', level: 'Intermédiaire', category: 'backend', progress: 50 }
