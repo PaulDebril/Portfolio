@@ -1,0 +1,29 @@
+/* Dans skill.component.scss */
+.progress {
+    background-color: #e9ecef;
+    position: relative;
+  }
+  
+  .progress-bar {
+    background-color: #007bff;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 2px solid #fff;
+  }
+  
+  .progress-bar:nth-child(2)::before {
+    left: 50%; /* Deuxième quart */
+  }
+  
+  .progress-bar:nth-child(3)::before {
+    left: 75%; /* Troisième quart */
+  }
+  

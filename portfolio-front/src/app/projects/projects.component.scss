@@ -1,0 +1,90 @@
+.work-box {
+    margin-bottom: 3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+  }
+  
+  .work-box:hover img {
+    transform: scale(1.3);
+  }
+  
+  .work-img {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .work-img img {
+    transition: all 1s;
+  }
+  
+  .work-content {
+    padding: 2rem 3% 1rem 4%;
+  }
+  
+  .work-content .w-more {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+  }
+  
+  .work-content .w-more .w-ctegory {
+    color: #0078ff;
+  }
+  
+  .work-content .w-like {
+    font-size: 2.5rem;
+    color: #0078ff;
+    float: right;
+  }
+  
+  .work-content .w-like a {
+    color: #0078ff;
+  }
+  
+  .work-content .w-like .num-like {
+    font-size: 0.7rem;
+  }
+  
+  .w-title {
+    font-size: 1.2rem;
+  }
+  
+  .modal {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Rester en place même lors du défilement */
+    z-index: 99; /* Situé sur les autres items */
+    left: 0;
+    top: 0;
+    width: 100%; /* Pleine largeur */
+    height: 100%; /* Pleine hauteur */
+    overflow: auto; /* Activer le défilement si nécessaire */
+    background-color: rgba(0,0,0,0.9); /* Noir avec opacité forte */
+  }
+  
+  .modal-content {
+    position: relative; /* Important pour le positionnement du bouton fermer */
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% du haut et centré horizontalement */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 90%; /* Pleine largeur moins 10% pour le margin */
+    height: 80%; /* Hauteur fixe */
+    overflow: auto; /* Ajout de défilement si le contenu dépasse */
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute; /* Position absolue par rapport au contenu du modal */
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
