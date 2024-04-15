@@ -27,3 +27,58 @@
     left: 75%; /* Troisième quart */
   }
   
+/* Styles pour les boutons de compétences */
+.buttons .btn {
+  font-size: 12px; /* Taille de texte plus petite */
+  padding: 5px 10px; /* Padding réduit pour que les boutons soient plus petits */
+  border-radius: 20px; /* Bordures fortement arrondies */
+  background-image: linear-gradient(to right, #6a1b9a, #8e24aa); /* Dégradé de violet */
+  color: white; /* Texte blanc pour contraste */
+  border: none; /* Pas de bordure */
+  transition: transform 0.3s ease; /* Animation légère lors du survol */
+}
+
+.buttons .btn:hover {
+  transform: scale(1.1); /* Agrandissement léger au survol */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre portée pour l'effet de profondeur */
+}
+
+.buttons .btn.active {
+  background-image: linear-gradient(to right, #3f0f5e, #521563); /* Dégradé de violet */
+}
+
+/* Conteneur des boutons */
+.buttons {
+  display: flex; /* Utilise flexbox pour un meilleur contrôle de l'alignement */
+  justify-content: center; /* Centre les boutons horizontalement */
+  gap: 10px; /* Ajoute un petit espace entre les boutons */
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+/* Styles individuels des boutons */
+.buttons .btn {
+  min-width: 100px; /* Définit une largeur minimale pour chaque bouton */
+  max-width: 150px; /* Définit une largeur maximale pour éviter que les boutons s'étirent */
+}
+
+/* Couleur pour la barre de progression à 25% */
+.progress-bar-25 {
+  background-color: #d67d84; /* Rouge clair */
+}
+
+/* Couleur pour la barre de progression à 50% */
+.progress-bar-50 {
+  background-color: #ffda62; /* Jaune clair */
+  color: black;
+}
+
+/* Couleur pour la barre de progression à 75% */
+.progress-bar-75 {
+  background-color: #4f77a1; /* Vert clair */
+}
+
+/* Couleur pour la barre de progression à 100% */
+.progress-bar-100 {
+  background-color: #318043; /* Bleu clair */
+}
