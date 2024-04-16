@@ -32,7 +32,7 @@
   font-size: 12px; /* Taille de texte plus petite */
   padding: 5px 10px; /* Padding réduit pour que les boutons soient plus petits */
   border-radius: 20px; /* Bordures fortement arrondies */
-  background-image: linear-gradient(to right, #6a1b9a, #8e24aa); /* Dégradé de violet */
+  background-image: linear-gradient(to right, #0d6efd, #0d6efd);
   color: white; /* Texte blanc pour contraste */
   border: none; /* Pas de bordure */
   transition: transform 0.3s ease; /* Animation légère lors du survol */
@@ -44,7 +44,7 @@
 }
 
 .buttons .btn.active {
-  background-image: linear-gradient(to right, #3f0f5e, #521563); /* Dégradé de violet */
+  background-image: linear-gradient(to right, #004dc0, #004dc0); 
   z-index: 0;
 }
 
