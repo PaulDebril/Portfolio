@@ -11,14 +11,14 @@ section{
   }
 
   
-  .container  {
-    width:100%;
-    height:100%;
-    position:absolute;
+  .container {
     display: flex;
-    justify-content: space-between; /* Répartition équitable de l'espace entre les éléments */
+    flex-direction: row; /* Les éléments sont en ligne par défaut */
+    justify-content: space-between; /* Espacement entre les éléments */
     align-items: center; /* Centrage vertical des éléments */
-  }
+    width: 100%;
+    height: 100%;
+}
 
   h1.title {
     color:rgb(0, 0, 0);
@@ -83,4 +83,67 @@ section{
   border-radius: 50%; /* Rend l'image ronde */
   border: 4px solid white; /* Bordure blanche autour de l'image */
   object-fit: cover; /* Assure que l'image remplit bien l'espace */
+}
+
+/* Styles de base pour les icônes */
+.fa-icon {
+  font-size: 4vw; /* Ajustez cette valeur pour trouver la bonne taille sur différents écrans */
+  color: rgb(0, 0, 0);
+}
+
+/* Média Queries pour les tailles d'écran spécifiques */
+@media (max-width: 768px) {
+
+  .profile-pic {
+    order: 1; /* L'image vient en premier sur les petits écrans */
+    width: 100%; /* Utilise toute la largeur pour mieux centrer l'image */
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    margin-bottom: 20px; /* Ajoute un peu d'espace en dessous de l'image */
+}
+
+.profile-pic img {
+    width: 50%; /* Ajustez selon la taille désirée pour l'image */
+    height: auto; /* Maintient le ratio */
+    border-radius: 50%; /* Rend l'image ronde */
+    border: 4px solid white; /* Bordure blanche autour de l'image */
+    object-fit: cover; /* Assure que l'image remplit bien l'espace */
+}
+
+  .container {
+    flex-direction: column; /* Change l'orientation en colonne */
+}
+
+.content {
+    order: 2; /* Le contenu vient après l'image */
+    text-align: center; /* Centre le texte pour une meilleure apparence sur les petits écrans */
+}
+.fa-icon {
+  font-size: 6vw; /* Plus grand sur les écrans plus petits */
+  margin-right: 2vw; /* Plus d'espace sur les petits écrans */
+}
+}
+
+@media (max-width: 480px) {
+.fa-icon {
+  font-size: 8vw; /* Encore plus grand pour les écrans très petits */
+  margin-right: 3vw;
+}
+
+.container {
+  flex-direction: column; /* Change l'orientation en colonne */
+}
+
+.content {
+  order: 2; /* Le contenu vient après l'image */
+  text-align: center; /* Centre le texte pour une meilleure apparence sur les petits écrans */
+}
+
+}
+
+/* Adaptation de la disposition des icônes */
+.contact div {
+  display: flex;
+  justify-content: center; /* Centre les icônes horizontalement */
+  flex-wrap: wrap; /* Permet aux icônes de passer à la ligne suivante si l'espace est insuffisant */
 }
