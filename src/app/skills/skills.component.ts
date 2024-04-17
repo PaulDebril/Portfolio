@@ -22,8 +22,11 @@ export class SkillsComponent {
    { name: 'Github', level: 'Confirmé', category: 'other', progress: 75 },
    { name: 'HTML/CSS', level: 'Maîtrise', category: 'frontend', progress: 100 },
    { name: 'Javascript', level: 'Confirmé', category: 'frontend', progress: 75 },
-   { name: 'NodeJS', level: 'Intermédiaire', category: 'backend', progress: 50 },
-   { name: 'Test', level: '', category: 'softskills', progress: 100 }
+   { name: 'NodeJS', level: 'Confirmé', category: 'backend', progress: 75 },
+   { name: 'Jira', level: 'Confirmé', category: 'other', progress: 75 },
+   { name: 'PHP', level: 'Intermédiaire', category: 'backend', progress: 50 },
+   { name: 'Test', level: '', category: 'softskills', progress: 100 },
+   
  ];
 
  getProgressBarClass(progress: number): string {

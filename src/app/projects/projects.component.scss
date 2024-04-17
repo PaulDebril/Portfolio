@@ -111,14 +111,45 @@
       -o-transform: scale(1.2);
       transform: scale(1.2);
   }
-      .modal-header {
-     
-       border-bottom: none;
-  }
-      .modal-title {
-          color:#000;
-      }
-      .modal-footer{
-        display:none;  
-      }
-  
+  .modal-title, .modal-subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.thumb {
+    padding: 5px;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.tags {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #ddd; /* Couleur de fond des tags */
+  color: black; /* Couleur du texte des tags */
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 12px;
+}
